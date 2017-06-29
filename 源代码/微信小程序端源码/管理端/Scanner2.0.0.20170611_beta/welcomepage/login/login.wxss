@@ -1,0 +1,36 @@
+/* loginpages/login/login.wxss */
+
+page {
+  background-color: #f2f2f2;
+}
+
+.shuru {
+  border-bottom: 1px solid gainsboro;
+  width: 620rpx;
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+}
+
+.wenzi {
+  margin-top: 100rpx;
+  margin-left: 50rpx;
+  width: 200rpx;
+  height: 60rpx;
+  font-size: 35rpx;
+  font-family: microsoft yahei;
+}
+
+.an {
+  width:100%;
+  height:400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anniu {
+  margin-top: 100rpx;
+  width: 300rpx;
+  font-family: microsoft yahei;
+  text-align: center;
+}

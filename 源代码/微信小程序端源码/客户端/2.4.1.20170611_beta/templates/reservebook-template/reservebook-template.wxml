@@ -1,0 +1,25 @@
+<template name="reservebook">
+  <view class="reservebook-container">
+    <view class="reservebook-image-container">
+      <image src="{{image}}"></image>
+    </view>
+    <view class="reservebook-infor-container">
+      <view class="title">
+        <text >{{title}}</text>
+      </view>
+       <view class="subtitle">
+        <text >{{subtitle}}</text>
+      </view>
+      <view class="author">
+        <text >{{author}}</text>
+      </view>
+      <view class="total">
+        <text >藏书量: </text>
+        <text class="num">{{storage}}本</text>
+      </view>
+      <view class="reservetime">
+         <text>预定时间：{{reserveTime}}</text>
+      </view>
+    </view>
+  </view>
+</template>

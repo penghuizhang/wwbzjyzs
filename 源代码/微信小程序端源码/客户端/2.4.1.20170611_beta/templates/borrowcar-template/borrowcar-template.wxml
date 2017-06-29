@@ -1,0 +1,21 @@
+<template name="borrowcar">
+<view class="borrowbook-container">
+    <!-- 图书封面 -->
+    <view class="borrowbook-image">
+      <image src="{{image}}"></image>
+    </view>
+    <!-- 图书信息 -->
+    <view class="borrowbook-information">
+      <view class="title">
+        <text>{{title}}</text>
+      </view>
+      <view class="author">
+        <text>{{author}}</text>
+      </view>
+      <view class="total">
+        <text>藏书量：</text>
+        <text class="num">{{count}}</text>
+      </view>
+    </view>
+</view>
+</template>

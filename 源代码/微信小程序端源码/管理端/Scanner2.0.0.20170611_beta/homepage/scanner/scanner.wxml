@@ -1,0 +1,21 @@
+<!--homepage/scanner/scanner.wxml-->
+<import src="/templates/book-template/book-template.wxml" />
+<view class="container">
+  <view class="operate">
+    <view class="admin">
+      <text>管理员：{{adminAccount}}</text>
+      <view class="logout" catchtap="logout">注销登录</view>
+    </view>
+    <image class="scanner" catchtap="scan" src="/icon/sao.png" />
+    <view class="confirm" catchtap="confirm">确认</view>
+  </view>
+  <view class="operation">{{operate}}</view>
+  
+  <block wx:for="{{booklist}}" wx:for-item="item">
+    <view data-id="{{item.id}}">
+      <template is="book" data="{{...item}}">
+      </template>
+    </view>
+  </block>
+  
+</view>

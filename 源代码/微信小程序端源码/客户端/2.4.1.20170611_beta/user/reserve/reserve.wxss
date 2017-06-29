@@ -1,0 +1,5 @@
+/* user/reserve/reserve.wxss */
+@import "/templates/reservebook-template/reservebook-template.wxss";
+page {
+  background-color: #eee;
+}

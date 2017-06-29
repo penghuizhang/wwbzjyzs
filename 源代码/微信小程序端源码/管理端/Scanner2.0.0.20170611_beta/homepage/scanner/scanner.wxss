@@ -1,0 +1,59 @@
+/* homepage/scanner/scanner.wxss */
+
+@import "/templates/book-template/book-template.wxss";
+page{
+  background-color: #eee;
+}
+
+.operate{
+  margin-top: 0rpx;
+  width:100%;
+  height:180rpx;
+  display: flex;
+  flex-direction: row;
+  font-family: microsoft yahei;
+  border-bottom: 1rpx solid lightgray;
+  background-color: #fff;
+}
+
+.admin{
+  margin:20rpx 10rpx 0 20rpx;
+  width:300rpx;
+  height:160rpx;
+  display:flex;
+  flex-direction: column;
+}
+.logout{
+  margin-top:20rpx;
+  width:200rpx;
+  height:60rpx;
+  text-align: center;
+  border: 1rpx solid lightcoral;
+  border-radius: 15rpx;
+  padding-top: 20rpx;
+}
+
+.scanner{
+  margin:25rpx 20rpx 0 30rpx;
+  width:100rpx;
+  height:100rpx;
+}
+.confirm{
+  margin:30rpx 20rpx 0 50rpx;
+  width:150rpx;
+  height:80rpx;
+  text-align: center;
+  border: 1rpx solid lightgray;
+  border-radius: 15rpx;
+  padding-top: 30rpx;
+}
+
+.operation{
+  margin-top:3rpx;
+  width:100%;
+  height:70rpx;
+  text-align: center;
+  font-family: microsoft yahei;
+  background-color: lightgoldenrodyellow;
+  padding-top:20rpx;
+}

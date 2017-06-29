@@ -1,0 +1,12 @@
+/* library/categorybooks/booklist.wxss */
+
+@import "/templates/categorybook-template/categorybook-template.wxss";
+
+.booklist-container{
+  height:1500rpx;
+  display:flex;
+  flex-direction:column;
+  margin-top:2rpx;
+  margin-left:1rpx;
+  background-color:  #fff;
+}

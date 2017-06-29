@@ -1,0 +1,8 @@
+<template name="hometemplate">
+  <view class="cate-container">
+    <view class="cate-text">
+      <text>{{text}}</text>
+    </view>
+    <image class="cate-img" src="{{imageUrl}}"></image>
+  </view>
+</template>

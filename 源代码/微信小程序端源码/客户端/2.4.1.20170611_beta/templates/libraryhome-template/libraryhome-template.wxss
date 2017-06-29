@@ -1,0 +1,27 @@
+.cate-container {
+  margin-top: 7rpx;
+  width: 371rpx;
+  height: 120rpx;
+  display: flex;
+  flex-direction: row;
+  background-color:#f2f2f2; 
+  margin-left: 5rpx;
+  border-radius: 5rpx;
+}
+
+.cate-text {
+  margin-left: 70rpx;
+  margin-top: 40rpx;
+  width:120rpx;
+  font-family: microsoft yahei;
+  font-size: 30rpx;
+  align-content: left;
+}
+
+.cate-img{
+  width: 80rpx;
+  height: 100rpx;
+   margin-top: 15rpx;
+   margin-left: 40rpx;
+   border-radius: 10rpx;
+}

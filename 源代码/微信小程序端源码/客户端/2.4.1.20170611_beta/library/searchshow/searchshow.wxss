@@ -1,0 +1,24 @@
+/* library/searchshow/searchshow.wxss */
+
+@import "/templates/categorybook-template/categorybook-template.wxss";
+
+page{
+  background-color: #eee;
+}
+
+.booklist-container{
+  display:flex;
+  flex-direction:column;
+  margin-top:2rpx;
+  margin-left:1rpx;
+  background-color:  #eee;
+}
+
+.empty{
+  margin-top:500rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: microsoft yahei;
+  background-color: #eee;
+}

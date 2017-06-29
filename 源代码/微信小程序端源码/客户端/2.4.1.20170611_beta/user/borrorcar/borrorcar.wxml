@@ -1,0 +1,13 @@
+<!--user/borrorcar/borrorcar.wxml-->
+<import src="/templates/borrowcar-template/borrowcar-template.wxml" />
+<view class="borrowcar-container">
+<checkbox-group bindchange="checkboxChange">
+  <block wx:for="{{booklist}}" wx:for-item="item">
+      <checkbox value="{{item.shopCarOrder.orderId}}">
+        <template is="borrowcar" data="{{...item.book}}" />
+      </checkbox>
+  </block>
+</checkbox-group>
+<button type="primary" class="borrow" catchtap="borrow">借阅</button>
+<button type="warn" class="delete" catchtap="delete">删除</button>
+</view>

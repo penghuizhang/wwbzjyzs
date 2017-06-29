@@ -1,0 +1,13 @@
+<!--user/borroredlist/borroredlist.wxml-->
+
+<import src="/templates/borrowcar-template/borrowcar-template.wxml" />
+<view class="borrowcar-container">
+<checkbox-group bindchange="checkboxChange">
+  <block wx:for="{{booklist}}" wx:for-item="item">
+      <checkbox value="{{item.borrowRecord.borrowRecordId}}">
+        <template is="borrowcar" data="{{...item.book}}" />
+      </checkbox>
+  </block>
+  </checkbox-group>
+  <button type="primary" class="return" catchtap="createQRcode">归还</button>
+</view>

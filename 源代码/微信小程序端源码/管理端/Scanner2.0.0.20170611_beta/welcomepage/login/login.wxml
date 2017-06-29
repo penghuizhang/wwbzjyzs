@@ -1,0 +1,15 @@
+
+<!--loginpages/login/login.wxml-->
+<form bindsubmit="formsubmit">
+  <view class="wenzi">
+    <text>管理员:</text>
+  </view>
+  <input class="shuru" type="text" name="account" placeholder="账号"/>
+  <view class="wenzi">
+    <text>密码:</text>
+  </view>
+  <input class="shuru" type="password" name="password" placeholder="密码" />
+  <view class="an">
+    <button class="anniu" form-type="submit" type="default">登录</button>
+  </view>
+</form>

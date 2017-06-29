@@ -1,0 +1,28 @@
+/* user/borrorcar/borrorcar.wxss */
+@import "/templates/borrowcar-template/borrowcar-template.wxss";
+
+page {
+  background-color: #eee;
+}
+
+.booklist-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rpx;
+  margin-left: 1rpx;
+  background-color: #eee;
+}
+
+checkbox {
+  width: 100%;
+  margin-left: 10rpx;
+  background-color: #eee;
+}
+
+.delete {
+  margin-top:50rpx;
+}
+
+.borrow {
+  margin-top:50rpx;
+}

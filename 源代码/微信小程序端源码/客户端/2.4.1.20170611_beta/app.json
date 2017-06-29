@@ -1,0 +1,44 @@
+{
+    "pages": [
+        "login/welcome/welcome",
+        "login/login/login",
+        "login/register/register",
+        
+        "library/libraryhome/libraryhome",
+        "library/categorybooks/booklist",
+        "library/bookinformation/bookInformation",
+        "library/searchshow/searchshow",
+
+        "user/userhome/userhome",
+        "user/userinformation/userinformation",
+        "user/borroredlist/borroredlist",
+        "user/readhistory/readhistory",
+        "user/borrorcar/borrorcar",
+        "user/reserve/reserve",
+        "user/qrcode/qrcode"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "backgroundColor": "#f0f8ff",
+        "color": "#666",
+        "selectedColor": "green",
+        "list": [
+            {
+                "pagePath": "library/libraryhome/libraryhome",
+                "iconPath": "icon/homepage.png",
+                "selectedIconPath": "icon/homepage-black.png",
+                "text": "图书馆"
+            },
+            {
+                "pagePath": "user/userhome/userhome",
+                "iconPath": "icon/user.png",
+                "selectedIconPath": "icon/user-black.png",
+                "text": "我的"
+            }
+        ]
+    }
+}

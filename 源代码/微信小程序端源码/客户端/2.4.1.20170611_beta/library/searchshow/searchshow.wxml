@@ -1,0 +1,16 @@
+<!--library/searchshow/searchshow.wxml-->
+<import src="/templates/categorybook-template/categorybook-template.wxml" />
+<view class="booklist-container">
+  <view wx:if="{{isFull}}">
+    <block wx:for="{{booklist}}" wx:for-item="item">
+      <view catchtap="onTap" data-id="{{item.id}}">
+        <template is="categorybook" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
+
+  <view wx:if="{{isEmpty}}" class="empty">
+    <text>对不起！</text>
+    <text>没有你想要的书籍</text>
+  </view>
+</view>

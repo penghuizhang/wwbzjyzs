@@ -1,0 +1,26 @@
+.grid-container{
+    margin-top:20rpx;
+    margin-left:25rpx;
+    margin-right:25rpx;
+    float:left;
+    display: flex;
+    flex-direction:column;
+    width:200rpx;
+    height:310rpx;
+    background-color: #fff;
+}
+
+.grid-container image{
+    width:180rpx;
+    height:270rpx;
+    margin-top:5rpx;
+    margin-left:10rpx;
+}
+
+.grid-container text{
+    width:190rpx;
+    height:40rpx;
+    margin-top:10rpx;
+    font-size: 11px;
+    margin-left:10rpx;
+}

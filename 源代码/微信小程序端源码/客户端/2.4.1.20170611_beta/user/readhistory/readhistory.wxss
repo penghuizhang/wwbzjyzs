@@ -1,0 +1,4 @@
+/* user/readhistory/readhistory.wxss */
+page {
+  background-color: #eee;
+}

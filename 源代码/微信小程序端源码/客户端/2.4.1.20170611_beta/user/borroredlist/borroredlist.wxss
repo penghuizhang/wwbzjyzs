@@ -1,0 +1,23 @@
+/* user/borroredlist/borroredlist.wxss */
+
+@import "/templates/borrowcar-template/borrowcar-template.wxss";
+
+page {
+  background-color: #eee;
+}
+
+.booklist-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rpx;
+  margin-left: 1rpx;
+  background-color: #fff;
+}
+checkbox{
+  width:100%;
+  background-color: #eee;
+}
+
+.return{
+  margin-top:50rpx;
+}

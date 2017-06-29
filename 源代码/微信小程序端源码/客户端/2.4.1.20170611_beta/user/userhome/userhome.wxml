@@ -1,0 +1,29 @@
+<!--user/userhome/userhome.wxml-->
+<view class="continer">
+    <text>头像</text>
+  <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+</view>
+
+<view class="continer">
+    <text>昵称</text>
+  <text class="nickName">{{userInfo.nickName}}</text>
+</view>
+
+<view class="continer"  bindtap="onborrowcar">
+    <text>借阅车</text>
+  <image class="arrow" src="/icon/arrow.png"></image>
+</view>
+
+<view class="continer"  bindtap="onBorrow">
+    <text>已借</text>
+  <image class="arrow" src="/icon/arrow.png"></image>
+</view>
+
+<view class="continer" bindtap="onReserve">
+    <text>预定</text>
+  <image class="arrow" src="/icon/arrow.png"></image>
+</view>
+
+<view class="buttonContainer">
+  <view class="logout" catchtap="logout">注销登录</view>
+</view>

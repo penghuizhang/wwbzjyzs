@@ -1,0 +1,5 @@
+{
+    "navigationBarBackgroundColor": "lightgray",
+    "navigationBarTitleText": "图书列表",
+    "enablePullDownRefresh": true
+}

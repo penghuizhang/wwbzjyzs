@@ -1,0 +1,10 @@
+
+<!--login/welcome/welcome.wxml-->
+<view class="container">
+  <text class="slogn-one">无微不至的</text>
+  <text class="slogn-two">借阅伴侣</text>
+  <image class="img" mode="aspectFit" src="/images/book.png" />
+  <view class="continer1" bindtap="bindViewTap">
+    <text class="user-motto">进入图书馆</text>
+  </view>
+</view>

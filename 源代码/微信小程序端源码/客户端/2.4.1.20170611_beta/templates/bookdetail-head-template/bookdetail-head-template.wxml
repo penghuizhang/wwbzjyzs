@@ -1,0 +1,13 @@
+
+<import src="/templates/bookdetail-head-template/bookdetail-head-template.wxml" />
+<template name="bookdetailhead">
+    <view class="head-container">
+        <image src="{{image}}" />
+        <view>
+            <text class="title">{{title}}</text>
+            <text class="author">{{author}}</text>
+            <text class="publisher">{{publisher}}</text>
+            <template is="stars"></template>
+        </view>
+    </view>
+</template>

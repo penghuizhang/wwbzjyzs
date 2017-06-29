@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wechat.oa.dao.book.BookDao">
+	<select id="getBooksByCategory" resultType="cn.wechat.oa.domain.CategoryBook">
+		select *
+		from category_book
+		where category = #{0}
+		order by id limit #{1},#{2}
+	</select>
+	<select id="getBookById" resultType="cn.wechat.oa.domain.Book">
+		SELECT *
+		FROM book
+		WHERE id=#{id}
+	</select>
+	<select id="getBooksBySearchKey" resultType="cn.wechat.oa.domain.Book">
+		select *
+		from book
+		where title like "%${key}%" or author like "%${key}%" or isbn13=#{key}
+	</select>
+
+	<select id="getBookByIsbn" resultType="cn.wechat.oa.domain.Book">
+		select *
+		from book
+		where
+		isbn13 = #{isbn}
+	</select>
+	
+	<update id="updateBookStorage" >
+		update book
+		set count = #{1}
+		where id=#{0}
+	</update>
+	
+	<update id="updateCategoryBookStorage" >
+		update category_book
+		set count = #{1}
+		where id=#{0}
+	</update>
+</mapper>

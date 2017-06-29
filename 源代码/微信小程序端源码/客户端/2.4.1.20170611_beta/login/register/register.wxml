@@ -1,0 +1,52 @@
+<view class="classname">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>手机号:</text>
+      </view>
+      <input type="text" name="telephone" placeholder="手机号" class="shuru" />
+    </view>
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>密码:</text>
+      </view>
+      <input type="password" name="pwd" placeholder="输入密码" class="shuru" />
+    </view>
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>重复密码:</text>
+      </view>
+      <input type="password" name="pwd2" placeholder="重复密码" class="shuru" />
+    </view>
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>姓名:</text>
+      </view>
+      <input type="text" name="uname" placeholder="输入姓名" class="shuru" />
+    </view>
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>年龄:</text>
+      </view>
+      <input type="text" name="age" placeholder="输入年龄" class="shuru" />
+    </view>
+
+    <view class="continer">
+      <view class="wenzi">
+        <text>邮箱:</text>
+      </view>
+      <input type="text" name="email" placeholder="输入邮箱" class="shuru" />
+    </view>
+
+    <view class="submits">
+      <button form-type="submit">提交</button>
+      <button form-type="reset">重置</button>
+    </view>
+  </form>
+
+</view>

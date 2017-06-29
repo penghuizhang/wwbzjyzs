@@ -1,0 +1,92 @@
+
+<!--library/libraryhome/libraryhome.wxml-->
+<import src="/templates/libraryhome-template/libraryhome-template.wxml" />
+<import src="/templates/book-grid-template/book-grid-template.wxml" />
+<scroll-view>
+
+  <!-- 搜索栏 -->
+  <view class="search">
+    <icon type="search" catchtap="search" class="search-img" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="书名、ISBN、作者" bindfocus="onBindFocus" bindblur="onBindBlur" />
+       <image wx:if="{{searchShow}}" src="/icon/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
+    <image src="/icon/saosao.png" class="sao-sao" catchtap="scan"></image>
+  </view>
+  <view wx:if="{{contentShow}}">
+
+    <!-- 轮播图 -->
+    <view>
+      <swiper indicator-dots="true" autoplay="ture" interval="3000">
+        <swiper-item>
+          <image src="/images/bg3.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/bg2.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+          <image src="/images/bg1.jpg"></image>
+        </swiper-item>
+         <swiper-item>
+          <image src="/images/bg5.jpg"></image>
+        </swiper-item>
+         <swiper-item>
+          <image src="/images/bg4.jpg"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="fenlei">
+      <text>图书分类</text>
+    </view>
+
+    <!-- 图书类别 -->
+    <view class="categorylist">
+      <block wx:for="{{homeData}}" wx:for-item="item">
+        <view catchtap="categoryTap" data-category="{{item.text}}">
+          <template is="hometemplate" data="{{...item}}" />
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 搜索页面 -->
+  <view class="search-container" wx:if="{{searchShow}}">
+
+    <!-- 图书推荐 -->
+    <view class="recommend">
+      <text>热门推荐</text>
+    </view>
+    <view>
+      <view class="grid-container">
+        <image class="cover" catchtap="bookTap" data-id="25857804"
+        src="https://img3.doubanio.com/mpic/s28001056.jpg" />
+        <text class="author">硅谷百年史</text>
+      </view>
+      <view class="grid-container">
+        <image class="cover" catchtap="bookTap" data-id="20429677"
+        src="https://img3.doubanio.com/mpic/s24574862.jpg" />
+        <text class="author">大数据时代</text>
+      </view>
+      <view class="grid-container" >
+        <image class="cover" catchtap="bookTap" data-id="26253507"
+        src="https://img3.doubanio.com/mpic/s27844475.jpg" />
+        <text class="author">互联网思想十讲</text>
+      </view>
+    </view>
+
+    <!-- 搜索记录 -->
+    <view class="recommend">
+      <text>搜索记录</text>
+    </view>
+    <view class="history-recorder">
+      <block wx:for="{{history}}" wx:item="item">
+        <view class="recorder" data-recorder="{{item.value}}">
+          <text class="history-record">{{item.value}}</text>
+        </view>
+      </block>
+    </view>
+    <view class="clear-container">
+      <view class="clear-record" catchtap="clearRecord">
+        <text>清除搜索记录</text>
+      </view>
+    </view>
+    </view>
+</scroll-view>

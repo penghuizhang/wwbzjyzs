@@ -1,0 +1,53 @@
+.categorybook-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #eeeeee;
+  margin-top: 4rpx;
+  margin-left:0rpx;
+  margin-right:0rpx;
+  height: 300rpx;
+}
+
+.categorybook-image-container image{
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+  align-items: center;
+  height: 270rpx;
+  width: 190rpx;
+}
+
+.categorybook-infor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+
+.title{
+  margin-top:20rpx;  
+  font-family: yahei;
+  font-size: 14px;
+}
+
+.subtitle{
+   margin-top:15rpx;  
+  font-family: yahei;
+  font-size: 13px;
+}
+
+.author{
+  margin-top:25rpx;  
+  font-family: yahei;
+  font-size: 11px;
+}
+
+.total{
+   margin-top:25rpx;  
+  font-family: yahei;
+  font-size: 12px;
+}
+
+.num{
+  color:cornflowerblue
+}

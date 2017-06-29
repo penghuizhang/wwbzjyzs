@@ -1,0 +1,53 @@
+<!--library/bookinformation/bookInformation.wxml-->
+<import src="/templates/star-template/star-template.wxml" />
+<view class="book-container">
+  <view class="head-container">
+    <view class="image-container">
+      <image src="{{book.image}}" />
+    </view>
+    <view class="info-container">
+      <text class="title">{{book.title}}</text>
+      <text class="author">{{book.author}}</text>
+      <template class="starscore" is="starsTemplate" data="{{average}}"></template>
+    </view>
+  </view>
+  <view class="tool-container">
+    <view class="comment" catchtap="comment" data-id="{{book.id}}">
+      <view>
+        <image src="/icon/comment.png"></image>
+      </view>
+      <view>
+        <text>评论</text>
+      </view>
+    </view>
+    <view class="reserve" catchtap="reserve" data-id="{{book.id}}">
+      <view>
+        <image src="/icon/reserve.png"></image>
+      </view>
+      <view>
+        <text>预定</text>
+      </view>
+    </view>
+    <view class="shopcar" catchtap="addshopcar" data-id="{{book.id}}">
+      <view>
+        <image src="/icon/shopcar.png"></image>
+      </view>
+      <view>
+        <text>借阅车</text>
+      </view>
+    </view>
+  </view>
+  <view class="booksummary">
+    <text class="title">内容简介</text>
+    <text>{{book.summary}}</text>
+  </view>
+  <view class="author-intro">
+    <text class="title">作者简介</text>
+    <text>{{book.author_intro}}</text>
+  </view>
+  <view class="bookcatelog" catchtap="viewCatalog">
+    <text class="title">目录</text>
+    <text>{{book.catalog}}</text>
+  </view>
+
+</view>

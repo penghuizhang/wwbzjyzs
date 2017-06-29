@@ -1,0 +1,6 @@
+<template name="gridTemplate">
+    <view class="grid-container">
+      <image class="cover" src="https://img3.doubanio.com/mpic/s27061826.jpg" />
+      <text class="author">古龙</text>
+    </view>
+</template>

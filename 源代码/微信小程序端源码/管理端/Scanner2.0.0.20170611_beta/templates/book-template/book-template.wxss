@@ -1,0 +1,60 @@
+.borrowbook-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin-top: 5rpx;
+  width: 100%;
+  margin-right: 5rpx;
+  height: 300rpx;
+}
+
+.borrowbook-image image {
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  align-items: center;
+  height: 270rpx;
+  width: 190rpx;
+}
+
+.borrowbook-information {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.title {
+  margin-top: 25rpx;
+  font-family: yahei;
+  font-size: 14px;
+}
+
+.author {
+  margin-top: 25rpx;
+  font-family: yahei;
+  font-size: 11px;
+}
+
+.total {
+  margin-top: 20rpx;
+  font-family: yahei;
+  font-size: 12px;
+}
+
+.delete-img {
+  margin-top: 20rpx;
+  margin-left:100rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.celect {
+  margin-top: 120rpx;
+  margin-left: 15rpx;
+  border-radius: 100%;
+}
+
+.num {
+  color: cornflowerblue;
+}

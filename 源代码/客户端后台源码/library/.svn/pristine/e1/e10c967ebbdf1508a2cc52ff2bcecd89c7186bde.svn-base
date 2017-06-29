@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wechat.oa.dao.shopcar.ShopCarOrderDao">
+	<insert id="addShopCarOrder" parameterType="cn.wechat.oa.domain.ShopCarOrder">
+		insert into shop_car(
+		  	orderId,
+	  		uid,
+	  		id,
+	  		addTime
+		)
+		values(
+			#{orderId},
+			#{uid},
+			#{id},
+			#{addTime}
+		)
+	</insert>
+	
+	<update id="deleteShopCarOrderByOrderId" parameterType="String">
+		delete 
+		from shop_car
+		where orderId = #{orderId}
+	</update>
+	
+	<select id="getShopCarOrderByUid" resultType="cn.wechat.oa.domain.ShopCarOrder">
+		select *
+		from shop_car
+		where uid = #{uid}
+	</select>
+	
+	<select id="getShopCarOrderByOrderId" parameterType="String" resultType="cn.wechat.oa.domain.ShopCarOrder">
+		select *
+		from shop_car
+		where OrderId = #{orderId}
+	</select>
+
+</mapper>

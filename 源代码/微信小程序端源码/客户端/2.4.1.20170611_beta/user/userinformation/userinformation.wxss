@@ -1,0 +1,43 @@
+/* user/userinformation/userinformation.wxss */
+
+.continer {
+  margin-top: 6rpx;
+  width: 100%;
+  height: 100rpx;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+}
+
+.wenzi {
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  width: 200rpx;
+  height: 50rpx;
+}
+
+.touxiang {
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 85rpx;
+  margin-left: 380rpx;
+}
+
+.jiantou {
+  margin-top: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 380rpx;
+}
+
+.nicheng {
+  margin-top: 30rpx;
+  width: 400rpx;
+  height: 50rpx;
+  margin-left:60rpx;
+  text-align: right;
+}
+.anniu{
+  margin-top: 20rpx;
+  background-color: lightblue;
+}

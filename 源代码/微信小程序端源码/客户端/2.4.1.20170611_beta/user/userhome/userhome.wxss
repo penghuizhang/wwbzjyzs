@@ -1,0 +1,68 @@
+/* user/userhome/userhome.wxss */
+page{
+  background-color: #f2f2f2;
+  justify-content: space-between;
+}
+
+.continer {
+  margin-top: 15rpx;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+}
+
+text{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  font-size: 30rpx;
+  font-family: microsoft yahei;
+  width: 200rpx;
+  height: 50rpx;
+}
+
+.avatar {
+  margin-top: 5rpx;
+  width: 80rpx;
+  height: 85rpx;
+  border-radius: 10rpx;
+  margin-left: 360rpx;
+}
+
+.arrow {
+  margin-top: 40rpx;
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 400rpx;
+}
+
+.nickName {
+  margin-top: 30rpx;
+  width: 200rpx;
+  height: 50rpx;
+  margin-left: 300rpx;
+  text-align: center;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-top: 100rpx;
+  width:100%;
+  height:100rpx;
+ 
+}
+
+.logout{
+  width:300rpx;
+  height:50rpx;
+  padding: 5rpx 0 5rpx 0;
+  color:#a00;
+  font-family: microsoft yahei;
+  letter-spacing: 3rpx;
+  border: 1px solid gainsboro;
+  border-radius: 10rpx;
+  text-align: center;
+}

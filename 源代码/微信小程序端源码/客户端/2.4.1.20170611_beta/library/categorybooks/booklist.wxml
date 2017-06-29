@@ -1,0 +1,12 @@
+
+<!--library/categorybooks/booklist.wxml-->
+<import src="/templates/categorybook-template/categorybook-template.wxml" />
+
+  <scroll-view class="booklist-container" scroll-y bindscrolltoupper="upper" bindscrolltolower="onScrollLower" bindscroll="scroll" lower-threshold="10">
+  <block wx:for="{{booklist}}" wx:for-item="item">
+    <view catchtap="onTap" data-id="{{item.id}}">
+      <template is="categorybook" data="{{...item}}">
+      </template>
+    </view>
+  </block>
+</scroll-view>

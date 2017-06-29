@@ -1,0 +1,10 @@
+<!--user/reserve/reserve.wxml-->
+<import src="/templates/reservebook-template/reservebook-template.wxml" />
+<view class="booklist-container">
+  <block wx:for="{{booklist}}" wx:for-item="item">
+    <view catchtap="onTap" data-id="{{item.id}}">
+      <template is="reservebook" data="{{...item}}">
+      </template>
+    </view>
+  </block>
+</view>

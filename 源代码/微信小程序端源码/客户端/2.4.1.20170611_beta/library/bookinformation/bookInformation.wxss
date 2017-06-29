@@ -1,0 +1,80 @@
+/* library/bookdetailinformation/detailinformation.wxss */
+
+@import "/templates/star-template/star-template.wxss";
+@import "/templates/bookdetail-head-template/bookdetail-head-template.wxss";
+
+.book-container{
+  display:flex;
+  flex-direction:column;
+  background-color:#eee;
+}
+
+.tool-container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  background-color:#eee;
+  font-size: 25rpx;
+  font-family: microsoft yahei;
+  height:120rpx;
+}
+
+.collect .reserve .shopcar .comment{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.collect image{
+  width:40rpx;
+  height:40rpx;
+}
+.reserve image{
+  width:40rpx;
+  height:40rpx;
+}
+
+.shopcar image{
+  width:40rpx;
+  height:40rpx;
+}
+
+.comment image{
+  width:40rpx;
+  height:40rpx;
+}
+
+.booksummary{
+  padding:10rpx 20rpx 10rpx 20rpx;
+  font-size:25rpx;
+  letter-spacing: 3rpx;
+  font-family: microsoft yahei;
+  color:#666;
+  background-color: #fff;
+}
+
+.bookcatelog{
+  margin-top:20rpx;
+  padding:10rpx 20rpx 10rpx 20rpx;
+  font-size:25rpx;
+  letter-spacing: 3rpx;
+  font-family: microsoft yahei;
+  color:#666;
+  background-color: #fff;
+}
+
+.author-intro{
+  margin-top:20rpx;
+  padding:10rpx 20rpx 10rpx 20rpx;
+  font-size:25rpx;
+  letter-spacing: 3rpx;
+  font-family: microsoft yahei;
+  color:#666;
+  background-color: #fff;
+}
+
+.title{
+  font-family: microsoft yahei;
+  padding:10rpx 20rpx 10rpx 20rpx;
+  font-size:30rpx;
+}

@@ -1,0 +1,38 @@
+<!--user/userinformation/userinformation.wxml-->
+
+<view class="continer">
+  <view class="wenzi">
+    <text>头像</text>
+  </view>
+  <image class="touxiang" src="/images/spring.jpg"></image>
+</view>
+<view class="continer">
+  <view class="wenzi">
+    <text>昵称</text>
+  </view>
+  <text class="nicheng">{{user.nickName}}</text>
+</view>
+<view class="continer">
+  <view class="wenzi">
+    <text>性别</text>
+  </view>
+   <text class="nicheng">{{user.gender}}</text>
+</view>
+<view class="continer">
+  <view class="wenzi">
+    <text>邮箱</text>
+  </view>
+  <text class="nicheng">{{user.email}}</text>
+</view>
+<view class="continer">
+  <view class="wenzi">
+    <text>薪资</text>
+  </view>
+   <text class="nicheng">{{user.money}}</text>
+</view>
+<view class="continer">
+  <view class="wenzi">
+    <text>手机</text>
+  </view>
+  <text class="nicheng">{{user.telephone}}</text>
+</view>

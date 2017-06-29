@@ -1,0 +1,13 @@
+<template name="starsTemplate">
+  <view class="stars-container">
+    <view class="stars">
+      <!--<block wx:for="{{stars}}" wx:for-item="i">-->
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/star.png"></image>
+        <image src="/icon/none-star.png"></image>
+    </view>
+    <text class="star-score">8.6</text>
+  </view>
+</template>
